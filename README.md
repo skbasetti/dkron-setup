@@ -8,7 +8,7 @@ This is the project to run DKron distributed scheduler on docker.
 * dKron 3.0.4
 
 ###### Synopsis
-Docker is built with Centos 8 as base image and includes the above packages. Upon docker run, dkron agent will startup and an API POST call is made to **/v1/jobs** endpoint for creating a scheduled job to be run every 10 seconds running the **date** command!
+Docker image is built with Centos 8 as base image and includes the above packages. Upon docker run, dkron agent will startup and an API POST call is made to **/v1/jobs** endpoint for creating a scheduled job to be run every 10 seconds running the **date** command!
 
 ###### How to build and run
 &nbsp;
