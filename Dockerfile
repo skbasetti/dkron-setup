@@ -1,6 +1,8 @@
 FROM centos:8
 COPY conf/dkron.repo /etc/yum.repos.d/dkron.repo
+COPY script/ /tmp/
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm \
-    && yum install dkron supervisor python3 python3-pip ansible supervisor -y
+    && yum install dkron python3 python3-pip ansible -y
+
 EXPOSE 8080
-CMD ["/usr/bin/dkron agent"]
+ENTRYPOINT ["/usr/bin/dkron", "agent", "&"]
