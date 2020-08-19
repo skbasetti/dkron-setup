@@ -1,0 +1,5 @@
+[dkron]
+name=Dkron Pro Private Repo
+baseurl=https://repo.distrib.works/yum/
+enabled=1
+gpgcheck=0
