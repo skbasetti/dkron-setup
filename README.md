@@ -1,4 +1,4 @@
-# DKron running on Docker
+# dKron running on Docker
 
 This is the project to run DKron distributed scheduler on docker.
 
