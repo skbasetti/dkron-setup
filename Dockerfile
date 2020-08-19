@@ -5,4 +5,4 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.n
     && yum install dkron python3 python3-pip ansible -y
 
 EXPOSE 8080
-ENTRYPOINT ["/usr/bin/dkron", "agent", "&"]
+ENTRYPOINT ["/tmp/startup.sh"]
