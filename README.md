@@ -16,11 +16,11 @@ Docker is built with Centos 8 as base image and includes the above packages. Upo
 ```
 git clone https://github.com/skbasetti/dkron-setup.git
 cd dkron-setup
-docker build -t dkron .
+sudo docker build -t dkron .
 ```
 *Running the container:*
 ```
-docker run -d -it --name=dkron-container -p 8080:8080 dkron
+sudo docker run -d -it --name=dkron-container -p 8080:8080 dkron
 ```
 *dKron dashboard will be available at the below URL*
 ```
