@@ -24,6 +24,6 @@ sudo docker run -d -it --name=dkron-container -p 8080:8080 dkron
 ```
 *dKron dashboard will be available at the below URL*
 ```
-http://localhost:8080/dashboard/
+http://<server IP>:8080/dashboard/
 ```
 
