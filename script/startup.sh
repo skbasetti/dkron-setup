@@ -2,4 +2,4 @@
 
 /tmp/create_job.sh &
 
-/usr/bin/dkron agent
+exec /usr/bin/dkron agent
