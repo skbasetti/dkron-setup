@@ -7,6 +7,9 @@ COPY script/ /tmp/
 # Installing required packages using YUM
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm \
     && yum install dkron python3 python3-pip ansible -y
+# Changing permissions
+RUN chmod 755 /tmp/startup.sh \
+    && chmod 755 /tmp/create_job.sh
 # Exposing 8080 port to run the dashboard
 EXPOSE 8080
 # Running startup.sh on container startup
